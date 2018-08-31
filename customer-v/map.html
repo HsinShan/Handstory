@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="style.css">
+        <title>Hand's Story-美甲地圖</title>
+        <script src='https://ajax.googleapis.com/ajax/libs/jquery/2.0.0/jquery.min.js'></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.0.0-beta.2.4/owl.carousel.min.js"></script>
+        <style>
+
+            .search{
+                width:700px;
+                margin: auto;
+                color: #a7a5a7;
+                font-size: 20px;
+            }
+            .search input{
+                border: 1px #dcd8dc solid;
+                border-radius: 10px;
+                height: 30px;
+                line-height: 30px;
+                font-size: 20px;
+            }
+            .search input:nth-child(1){
+                margin-right: 60px;
+            }
+            .map table{
+                width:800px;
+                margin: auto;
+                color: #a7a5a7;
+                border-collapse: collapse;
+            }
+            .map table tr{
+                border-bottom: 1px #dcd8dc solid;
+                border-top: 1px #dcd8dc solid;
+            }
+            .map table td:nth-child(1){
+                width: 200px;
+            }
+            .map table td:nth-child(2){
+                padding: 10px 60px;
+                font-size: 20px;
+                line-height: 40px;
+            }
+            .map table td:nth-child(3){
+                width: 100px;
+            }
+            .map table img{
+                width: 200px;
+                height: 200px;
+            }
+            #go{
+                width:80px;
+                line-height: 35px;
+                font-size: 20px;
+                margin: 0 300px;
+            }
+
+
+        </style>
+    </head>
+    <body>
+        <header>
+            <a href="index.html" target="_blank"><img src="image/LOGO.jpg">
+                <img src="image/Title.jpg"></a>
+            <div class="cuscenter">
+                <ul>
+                    <li><a href="cupdate.html">修改資料</a></li>
+                    <li><a href="record.html">我的訂單</a></li>
+                    <li><a href="comment.html">我的評論</a></li>
+                    <li><a href="">登出</a></li>
+                </ul>
+            </div>
+        </header>
+        <!--menu-->
+        <div>
+            <ul id="menu">
+                <li><a href="reserve.html" target="_parent">我的預約</a></li>
+                <li><a id="st">美甲店</a></li>
+                <li class="active"><a href="#" target="_parent">美甲地圖</a></li>
+                <li><a id="fav">收藏店家</a></li>
+                <li><a href="group.html" target="_parent">論壇</a></li>
+                <li><a href="mall.html" target="_parent">銷售平台</a></li>
+            </ul>
+        </div>
+        <div class="map backview">
+            <div class="search">
+                <h1>請輸入縣市地區</h1>
+                <form name="myForm" action="" method="post">
+                    <label for="s1">縣市:
+                        <input type="text" id="s1" placeholder="新北市"></label>
+                    <label for="s2">鄉鎮市區:
+                        <input type="text" id="s2"  placeholder="大安區"></label><br><br>
+                    <input type="button" class="btn" id="go" value="搜尋">
+                </form>
+            </div>
+            <div class="storelist">
+                <h1>美甲店一覽</h1>
+                <table>
+                    <tr>
+                        <td><img src="image/storetestphoto.png"></td>
+                        <td>店名:美甲店一<br><font class="address">地址:台北市文山區指南路二段64號</font></td>
+                        <td><a href="gomap.html" class="btn" target="_blank">前往地圖</a></td>
+                    </tr>
+                    <tr>
+                        <td><img src="image/storetestphoto.png"></td>
+                        <td>店名:美甲店一<br><font class="address">地址:台北市文山區指南路二段64號</font></td>
+                        <td><a href="gomap.html" class="btn"  target="_blank">前往地圖</a></td>
+                    </tr>
+                    <tr>
+                        <td><img src="image/storetestphoto.png"></td>
+                        <td>店名:美甲店一<br><font class="address">地址:台北市文山區指南路二段64號</font></td>
+                        <td><a href="gomap.html" class="btn"  target="_blank">前往地圖</a></td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+
+        <div id="stores" class="jump">
+            <h1>美甲店一覽</h1>
+            <table>
+                <tr>
+                    <td><a href="store.html">QQ美甲</a></td>
+                    <td><a href="store.html">QQ美甲</a></td>
+                    <td><a href="store.html">QQ美甲</a></td>
+                    <td><a href="store.html">QQ美甲</a></td>
+                </tr>
+                <tr>
+                    <td><a href="store.html">QQ美甲</a></td>
+                    <td><a href="store.html">QQ美甲</a></td>
+                    <td><a href="store.html">QQ美甲</a></td>
+                    <td><a href="store.html">QQ美甲</a></td>
+                </tr>
+                <tr>
+                    <td><a href="store.html">QQ美甲</a></td>
+                    <td><a href="store.html">QQ美甲</a></td>
+                    <td><a href="store.html">QQ美甲</a></td>
+                    <td><a href="store.html">QQ美甲</a></td>
+                </tr>
+                <tr>
+                    <td><a href="store.html">QQ美甲</a></td>
+                    <td><a href="store.html">QQ美甲</a></td>
+                    <td><a href="store.html">QQ美甲</a></td>
+                    <td><a href="store.html">QQ美甲</a></td>
+                </tr>
+                <tr>
+                    <td><a href="store.html">QQ美甲</a></td>
+                    <td><a href="store.html">QQ美甲</a></td>
+                    <td><a href="store.html">QQ美甲</a></td>
+                    <td><a href="store.html">QQ美甲</a></td>
+                </tr>
+                <tr>
+                    <td><a href="store.html">QQ美甲</a></td>
+                    <td><a href="store.html">QQ美甲</a></td>
+                    <td><a href="store.html">QQ美甲</a></td>
+                    <td><a href="store.html">QQ美甲</a></td>
+                </tr>
+            </table>
+        </div>
+        <div id="favorite" class="jump">
+            <h1>您的收藏店家</h1>
+            <table>
+                <tr>
+                    <td><a href="store.html">QQ美甲</a></td>
+                    <td><a href="store.html">QQ美甲</a></td>
+                    <td><a href="store.html">QQ美甲</a></td>
+                    <td><a href="store.html">QQ美甲</a></td>
+                </tr>
+                <tr>
+                    <td><a href="store.html">QQ美甲</a></td>
+                    <td><a href="store.html">QQ美甲</a></td>
+                    <td><a href="store.html">QQ美甲</a></td>
+                    <td><a href="store.html">QQ美甲</a></td>
+                </tr>
+                <tr>
+                    <td><a href="store.html">QQ美甲</a></td>
+                    <td><a href="store.html">QQ美甲</a></td>
+                    <td><a href="store.html">QQ美甲</a></td>
+                    <td><a href="store.html">QQ美甲</a></td>
+                </tr>
+            </table>
+        </div>
+        <script>
+            $('.owl-carousel').owlCarousel({
+                loop:false,
+                margin:15,
+                nav:false,	
+                items:4,
+            })
+
+            $('#fav,#favorite').hover(function(){
+                $('#favorite').show();
+            },
+                                      function(){
+                $('#favorite').hide();
+            })
+            $('#st,#stores').hover(function(){
+                $('#stores').show();
+            },
+                                   function(){
+                $('#stores').hide();
+            })
+
+
+
+        </script>
+    </body>
+</html>

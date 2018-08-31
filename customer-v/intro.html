@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="style.css">
+        <title>Hand's Story</title>
+        <style>
+            <style>
+            .A {
+                width: 1380px;
+                height: 550px;
+                background-color: #f8f0f8;
+                padding: 0px;
+                margin: 0px;
+            }
+
+            .B {
+                width: 1380px;
+                height: 550px;
+                background-color: #fff;
+            }
+
+            h1 {
+                padding-top: 40px;
+                text-align: center;
+                font-family: "翩翩體-繁";
+                font-size: 26px;
+                color: #a7a5a7;
+                margin: 0px;
+            }
+
+            .button {
+                position: absolute;
+                left: 1150px;
+                top: 27px;
+                font-size: 20px;
+            }
+            .intro {
+                color: #a7a5a7;
+                list-style-type: none;
+                padding: 5px 50px;
+            }
+
+            .bu {
+                width: 150px;
+                height: 150px;
+                background-color: #FFF;
+                opacity: 0.9;
+                border-radius: 80px;
+                text-align: center;
+                line-height: 150px;
+                margin-top: 50px;
+            }
+
+            .bufun {
+                width: 150px;
+                height: 150px;
+                border-radius: 80px;
+                display: block;
+                font-size: 20px;
+                color: #a7a5a7;
+                text-decoration: none;
+                font-weight: bold;
+            }
+
+            .bufun:hover {
+                color: #FFF;
+                background-color: #dcd8dc;
+                font-size: 25px;
+            }
+
+
+        </style>
+
+        <!--jcarousel-->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.0.0-beta.2.4/assets/owl.carousel.min.css">
+        <link rel="stylesheet" href="jcarouselstyle.css">
+        <script src='https://ajax.googleapis.com/ajax/libs/jquery/2.0.0/jquery.min.js'></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.0.0-beta.2.4/owl.carousel.min.js"></script>
+
+
+    </head>
+    <body>
+        <header>
+            <a href="index.html" target="_blank"><img src="image/LOGO.jpg">
+            <img src="image/Title.jpg"></a>
+        </header>
+        <!--menu-->
+        <div>
+            <ul id="menu">
+                <li><a href="reserve.html" target="_parent">我的預約</a></li>
+                <li><a id="st">美甲店</a></li>
+                <li><a href="map.html" target="_parent">美甲地圖</a></li>
+                <li><a id="fav">收藏店家</a></li>
+                <li><a href="group.html" target="_parent">論壇</a></li>
+                <li><a href="mall.html" target="_parent">銷售平台</a></li>
+            </ul>
+        </div>
+        <div class="A" style="height:400px;">
+
+            <h1>Hand's Story的五大主打功能</h1><br><br>
+
+
+            <p class='bu' style="position: absolute; top: 220px; left: 100px;">
+                <a class='bufun' href="#reserve">預約系統</a>
+            </p>
+            <p class='bu' style="position: absolute; top: 220px; left: 360px;">
+                <a class='bufun' href="#comment">評價系統</a>
+            </p>
+            <p class='bu' style="position: absolute; top: 220px; left: 620px;">
+                <a class='bufun' href="#mapb">美甲地圖</a>
+            </p>
+            <p class='bu' style="position: absolute; top: 220px; left: 880px;">
+                <a class='bufun' href="#group">論壇</a>
+            </p>
+            <p class='bu' style="position: absolute; top: 220px; left: 1140px;">
+                <a class='bufun' href="#sell">銷售平台</a>
+            </p>
+
+        </div>
+
+        <!--第二塊-->
+        <div class="B" id="reserve">
+            <h1>預約系統</h1>
+
+            <li class='intro'><font style="font-weight:bold;">★預約店家</font><br>
+
+                <br><font color="#03f">方法一:</font>游標移到功能列表中的美甲店→選取您所想要預約的店家→點擊我要預約
+                <br><font color="#03f">方法二:</font>點擊功能列表中的美甲地圖→搜尋特定地點的店家→點擊所想要預約的店家名稱或照片→點擊我要預約<br>
+
+            </li>
+            <li class='intro'><font style="font-weight:bold;">★查看預約狀況及記錄</font>
+                <br>
+
+                <br><font color="#03f">一般會員:</font>點擊功能列表中的我要預約即可查看預約訂單狀況及歷史預約紀錄 
+                <br><font color="#03f">店家會員:</font>點擊功能列表中的預約即可查看預約訂單及歷史預約紀錄，並可以決定是否接下新的預約訂單<br>
+
+
+            </li>
+
+        </div>
+        <!--第三塊-->
+        <div class="A" id="comment" style="height:660px;">
+            <h1>評價系統</h1>
+            <br>
+            <li class='intro'><font style="font-weight:bold;">★提供店家及顧客雙向評分的平台</font>
+                <br>
+
+                <br>店家將預約訂單按下完成→會員及店家的畫面右上方功能條中的我的評價功能即會跳出一筆待評價訂單
+                <br><font color="red">(note:店家對顧客的評價僅店家會員才可查看)</font>
+                <br>
+            </li>
+
+            <li class='intro'><font style="font-weight:bold;">★查看店家分數</font>
+                <br>
+
+                <br>選取欲查看評價的店家→可從評價欄中看到顧客對此店家的評價(這些評價都是由真的有在此美甲店做過美甲的顧客所填寫的) 
+                <br>
+
+            </li>
+            <li class='intro'><font style="font-weight:bold;">★查看顧客分數<font color="#03f">(限店家會員才有此功能)</font></font>
+                <br>
+
+                <br>點擊功能列表中的預約→當有新一筆訂單出現，即可點擊顧客姓名來查看其他店家對她的評價(這些評價都是由真的有接待過此顧客的美甲店加所填寫的) 
+                <br>
+            </li>
+        </div>
+        <!--第四塊-->
+        <div class="B" id="mapb">
+            <h1>美甲地圖</h1>
+            <br>
+            <li class='intro'><font style="font-weight:bold;">★搜尋附近店家</font>
+                <br>
+
+                <br>點擊功能列表中的美甲地圖→輸入縣市鄉鎮即可搜尋附近店家 
+                <br>
+            </li>
+            <li class='intro'><font style="font-weight:bold;">★開始導航</font>
+                <br>
+
+                <br>選擇所想要的店家，點擊查看地圖即可看見google map
+            </li>
+        </div>
+        <!--第五塊-->
+        <div class="A" id="group">
+            <h1>論壇</h1>
+            <br>
+            <li class='intro'><font style="font-weight:bold;">★提問<font color="#03f">(限一般會員才有的功能)</font></font>
+                <br>
+
+                <br>點擊功能列表中的論壇→點擊畫面右上方的我要提問即可進行提問 
+                <br></li>
+            <li class='intro'><font style="font-weight:bold;">★回覆</font>
+                <br>
+
+                <br>點擊功能列表中的論壇→選擇所欲回答的問題→點擊我要回答即可進行回覆
+                <br>
+            </li>
+            <li class='intro'><font style="font-weight:bold;">★搜尋主題</font>
+                <br>
+
+                <br>點擊功能列表中的論壇→在搜尋主題的搜尋框中填入預收尋的關鍵字，再按下搜尋即可 
+                <br>
+            </li>
+        </div>
+        <!--第六塊-->
+        <div class="B" id="sell">
+            <h1>銷售平台</h1>
+            <br>
+            <li class='intro'><font style="font-weight:bold;">★開始購物<font color="#03f">(限一般會員才有的功能)</font></font>
+                <br>
+
+                <br>點擊功能列表中的銷售平台→即可開始購物
+                <br></li>
+            <li class='intro'><font style="font-weight:bold;">★建立我的賣場<font color="#03f">(限店家會員才有的功能)</font></font>
+                <br>
+
+                <br>點擊功能列表中的我的賣場→即可上下架商品，當有新訂單也會進行提醒
+                <br></li>
+        </div>
+
+         <div id="stores" class="jump">
+            <h1>美甲店一覽</h1>
+           <table>
+               <tr>
+                   <td><a href="store.html">QQ美甲</a></td>
+                   <td><a href="store.html">QQ美甲</a></td>
+                   <td><a href="store.html">QQ美甲</a></td>
+                   <td><a href="store.html">QQ美甲</a></td>
+               </tr>
+               <tr>
+                   <td><a href="store.html">QQ美甲</a></td>
+                   <td><a href="store.html">QQ美甲</a></td>
+                   <td><a href="store.html">QQ美甲</a></td>
+                   <td><a href="store.html">QQ美甲</a></td>
+               </tr>
+               <tr>
+                   <td><a href="store.html">QQ美甲</a></td>
+                   <td><a href="store.html">QQ美甲</a></td>
+                   <td><a href="store.html">QQ美甲</a></td>
+                   <td><a href="store.html">QQ美甲</a></td>
+               </tr>
+               <tr>
+                   <td><a href="store.html">QQ美甲</a></td>
+                   <td><a href="store.html">QQ美甲</a></td>
+                   <td><a href="store.html">QQ美甲</a></td>
+                   <td><a href="store.html">QQ美甲</a></td>
+               </tr>
+               <tr>
+                   <td><a href="store.html">QQ美甲</a></td>
+                   <td><a href="store.html">QQ美甲</a></td>
+                   <td><a href="store.html">QQ美甲</a></td>
+                   <td><a href="store.html">QQ美甲</a></td>
+               </tr>
+               <tr>
+                   <td><a href="store.html">QQ美甲</a></td>
+                   <td><a href="store.html">QQ美甲</a></td>
+                   <td><a href="store.html">QQ美甲</a></td>
+                   <td><a href="store.html">QQ美甲</a></td>
+               </tr>
+           </table>
+        </div>
+        <div id="favorite" class="jump">
+            <h1>您的收藏店家</h1>
+            <table>
+                <tr>
+                    <td><a href="store.html">QQ美甲</a></td>
+                    <td><a href="store.html">QQ美甲</a></td>
+                    <td><a href="store.html">QQ美甲</a></td>
+                    <td><a href="store.html">QQ美甲</a></td>
+                </tr>
+                <tr>
+                    <td><a href="store.html">QQ美甲</a></td>
+                    <td><a href="store.html">QQ美甲</a></td>
+                    <td><a href="store.html">QQ美甲</a></td>
+                    <td><a href="store.html">QQ美甲</a></td>
+                </tr>
+                <tr>
+                    <td><a href="store.html">QQ美甲</a></td>
+                    <td><a href="store.html">QQ美甲</a></td>
+                    <td><a href="store.html">QQ美甲</a></td>
+                    <td><a href="store.html">QQ美甲</a></td>
+                </tr>
+            </table>
+        </div>
+        <script>
+            $('.owl-carousel').owlCarousel({
+                loop:false,
+                margin:15,
+                nav:false,	
+                items:4,
+            })
+
+            $('#fav,#favorite').hover(function(){
+                $('#favorite').show();
+            },
+                                      function(){
+                $('#favorite').hide();
+            })
+            $('#st,#stores').hover(function(){
+                $('#stores').show();
+            },
+                                   function(){
+                $('#stores').hide();
+            })
+
+
+
+
+
+        </script>
+    </body>
+</html>

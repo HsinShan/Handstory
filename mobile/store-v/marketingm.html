@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="css/themes/my-custom-theme.css" />
+        <link rel="stylesheet" href="css/themes/jquery.mobile.icons.min.css" />
+        <link rel="stylesheet"
+              href="http://code.jquery.com/mobile/1.4.5/jquery.mobile.structure-1.4.5.min.css" />
+        <script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
+        <script
+                src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+        <link rel="stylesheet" href="stylemob.css" type="text/css">
+        <meta name="format-detection" content="telephone=no">
+        <title>Hand's Story</title>
+        <style>
+
+            .search{
+                width:100%;
+                margin: auto;
+                font-size: 20px;
+            }
+            .search input{
+                border: 1px #dcd8dc solid;
+                border-radius: 10px;
+                height: 30px;
+                line-height: 30px;
+                font-size: 20px;
+                display: inline-block;
+            }
+            .product{
+                width: 100%;
+                margin:50px auto;
+                
+            }
+            .buy{
+               
+                padding: 10px;
+                border-radius: 5px;
+                border: 2px #dcd8dc solid;
+                margin: 10px auto;
+                background: #FFF;
+            }
+            .buy img{
+                width: 95%;
+                border-radius: 5px;
+            }
+            .buy h3,.buy .price{
+                width: 100%;
+                text-align: center;
+                margin: 10px 0;
+            }
+            .buy .ps{
+                width: 100%;
+                text-align: left;
+                margin: 10px 0;
+            }
+            .num{
+                width: 30px;
+                margin: 10px 20px;
+                margin-left: 2px;
+                text-align: center;
+            }
+
+            
+
+        </style>
+        <script>
+
+            $(document).ready(function(){
+                $('.delete').click(function(){
+                    confirm("確定要刪除此活動?")
+                })
+                
+            })
+
+        </script>
+
+        <script type="text/javascript"
+                src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.10.2/jquery-ui.min.js"></script>
+        <script type="text/javascript"
+                src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+    </head>
+
+    <body>
+        <div data-role="page">
+            <!--LOGO-->
+            <div data-role="header" style="background-color: #FFF;">
+                <img src="image/Logomob.jpg" width='90%'
+                     style="padding-right: '10%';" border="none" />
+                <!--menu icon-->
+                <a class="ui-btn ui-btn-right  ui-btn-icon-left"
+                   style="margin: 1%; padding: 5%; background-image: url(image/menuiconmob.jpg); background-size: contain; border: solid; border-width: 1px; border-radius: 10px; border-color: rgb(231, 204, 220);"
+                   href="#right-menu"></a>
+            </div>
+            <!--側邊MENU-->
+            <div id="right-menu" data-role="panel" data-position="right"
+                 data-position-fixed="true">
+                <ul data-role='listview'>
+                    <p style="font-size: 20px; text-align: center; color: #a5a7a5; font-weight: bold;">主選單</p>
+                    <li data-role='list-divider'><a href='reservestm.html' rel="external">我的預約</a></li>
+                    <li data-role='list-divider'><a href="storeliststm.html" rel="external">美甲店</a></li>
+                    <li data-role='list-divider'><a href="mapstm.html" rel="external">美甲地圖</a></li>
+                    <li data-role='list-divider'><a href="groupstm.html" rel="external"> 論壇</a></li>
+                    <li data-role='list-divider'><a href="#mallstm">我的賣場</a></li>
+                    <li data-role='list-divider'><a href="#storecm"> 店家管理</a></li>
+                    <li data-role='list-divider'><a href="index.html" rel="external">回首頁</a></li>
+                    <li data-role='list-divider'><a href="https://hsinshan.github.io/Handstory/store-v/" rel="external"> 電腦版</a></li>
+                    <li data-role='list-divider'><a href="?logout=true"  rel="external">登出</a></li>
+
+                </ul>
+            </div>
+            <div data-role="content">
+                <div class="search">
+                    <h1>行銷活動管理</h1>
+                    <p align="right">活動總數:3</p>
+                </div>
+                <div class="product">
+                    <div class="buy">
+                        <h3>活動名稱:母親節優惠1</h3>
+
+                        <p>建立時間:2018-05-26 16:57:32</p>
+                        <p>活動開始時間：2018-05-26 00:00:00</p>
+                        <p>活動結束時間：2018-05-26 00:00:00</p>
+                        <p>活動DM:<br>
+                            <img src="image/test1.jpg">
+                        </p>
+                        <p align="center"><a data-role="button" rel="external" href="marketing_editm.html" >修改</a><a data-role="button" class="delete" href="#">刪除</a></p>
+
+                    </div>
+                    <div class="buy">
+                        <h3>活動名稱:母親節優惠2</h3>
+
+                        <p>建立時間:2018-05-26 16:57:32</p>
+                        <p>活動開始時間：2018-05-26 00:00:00</p>
+                        <p>活動結束時間：2018-05-26 00:00:00</p>
+                        <p>活動DM:<br>
+                            <img src="image/test1.jpg">
+                        </p>
+                        <p align="center"><a data-role="button" rel="external" href="marketing_editm.html" >修改</a><a data-role="button" class="delete" href="#">刪除</a></p>
+
+                    </div>
+                    <div class="buy">
+                        <h3>活動名稱:母親節優惠3</h3>
+
+                        <p>建立時間:2018-05-26 16:57:32</p>
+                        <p>活動開始時間：2018-05-26 00:00:00</p>
+                        <p>活動結束時間：2018-05-26 00:00:00</p>
+                        <p>活動DM:<br>
+                            <img src="image/test1.jpg">
+                        </p>
+                       <p align="center"><a data-role="button" rel="external" href="marketing_editm.html" >修改</a><a data-role="button" class="delete" href="#">刪除</a></p>
+
+                    </div>
+                    <br>
+                    <a data-role="button" rel="external" href="marketing_addm.html">新增</a><br>
+                </div>
+            </div>
+        </div>
+           <div data-role='page' id="storecm">
+             <!--LOGO-->
+            <div data-role="header" style="background-color: #FFF;">
+                <img src="image/Logomob.jpg" width='90%'
+                     style="padding-right: '10%';" border="none" />
+                <!--menu icon-->
+                <a class="ui-btn ui-btn-right  ui-btn-icon-left"
+                   style="margin: 1%; padding: 5%; background-image: url(image/menuiconmob.jpg); background-size: contain; border: solid; border-width: 1px; border-radius: 10px; border-color: rgb(231, 204, 220);"
+                   href="#right-menu"></a>
+            </div>
+            <!--側邊MENU-->
+            <div id="right-menu" data-role="panel" data-position="right"
+                 data-position-fixed="true">
+                <ul data-role='listview'>
+                    <p style="font-size: 20px; text-align: center; color: #a5a7a5; font-weight: bold;">主選單</p>
+                    <li data-role='list-divider'><a href='reservestm.html' rel="external">我的預約</a></li>
+                    <li data-role='list-divider'><a href="storeliststm.html" rel="external">美甲店</a></li>
+                    <li data-role='list-divider'><a href="mapstm.html" rel="external">美甲地圖</a></li>
+                    <li data-role='list-divider'><a href="groupstm.html" rel="external"> 論壇</a></li>
+                    <li data-role='list-divider'><a href="#mallstm">我的賣場</a></li>
+                    <li data-role='list-divider'><a href="#storecm"> 店家管理</a></li>
+                    <li data-role='list-divider'><a href="index.html" rel="external">回首頁</a></li>
+                    <li data-role='list-divider'><a href="https://hsinshan.github.io/Handstory/store-v/" rel="external"> 電腦版</a></li>
+                    <li data-role='list-divider'><a href="?logout=true"  rel="external">登出</a></li>
+
+                </ul>
+            </div>
+            <div data-role='content'>
+
+                <p
+                   style="font-size: 20px; text-align: center; color: #a5a7a5; font-weight: bold;">店家管理</p>
+                <div data-role='controlgroup'>
+                    <a data-role='button' href='storestm.html' rel="external">我的頁面</a>
+                    <a data-role='button' href='supdatem.html' rel="external">修改資料</a>
+                    <a data-role='button' href="work_managem.html" rel="external">作品集管理</a>
+                    <a data-role='button' href="marketingm.html" rel="external">行銷活動管理</a>
+                    <a data-role='button' href="scommentm.html" rel="external">我的評論</a>
+                </div>
+            </div>
+        </div>
+        <div data-role='page' id="mallstm">
+             <!--LOGO-->
+            <div data-role="header" style="background-color: #FFF;">
+                <img src="image/Logomob.jpg" width='90%'
+                     style="padding-right: '10%';" border="none" />
+                <!--menu icon-->
+                <a class="ui-btn ui-btn-right  ui-btn-icon-left"
+                   style="margin: 1%; padding: 5%; background-image: url(image/menuiconmob.jpg); background-size: contain; border: solid; border-width: 1px; border-radius: 10px; border-color: rgb(231, 204, 220);"
+                   href="#right-menu"></a>
+            </div>
+            <!--側邊MENU-->
+            <div id="right-menu" data-role="panel" data-position="right"
+                 data-position-fixed="true">
+                <ul data-role='listview'>
+                    <p style="font-size: 20px; text-align: center; color: #a5a7a5; font-weight: bold;">主選單</p>
+                    <li data-role='list-divider'><a href='reservestm.html' rel="external">我的預約</a></li>
+                    <li data-role='list-divider'><a href="storeliststm.html" rel="external">美甲店</a></li>
+                    <li data-role='list-divider'><a href="mapstm.html" rel="external">美甲地圖</a></li>
+                    <li data-role='list-divider'><a href="groupstm.html" rel="external"> 論壇</a></li>
+                    <li data-role='list-divider'><a href="#mallstm">我的賣場</a></li>
+                    <li data-role='list-divider'><a href="#storecm"> 店家管理</a></li>
+                    <li data-role='list-divider'><a href="index.html" rel="external">回首頁</a></li>
+                    <li data-role='list-divider'><a href="https://hsinshan.github.io/Handstory/store-v/" rel="external"> 電腦版</a></li>
+                    <li data-role='list-divider'><a href="?logout=true"  rel="external">登出</a></li>
+
+                </ul>
+            </div>
+            <div data-role='content'>
+
+                <p
+                   style="font-size: 20px; text-align: center; color: #a5a7a5; font-weight: bold;">店家管理</p>
+                <div data-role='controlgroup'>
+                    <a data-role='button' href='productm.html' rel="external">上傳/下架商品</a>
+                    <a data-role='button' href="recordstm.html"
+                       rel="external">訂單管理</a>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>

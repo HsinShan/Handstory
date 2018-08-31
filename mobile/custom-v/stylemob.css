@@ -1,0 +1,113 @@
+@charset "utf-8";
+/* CSS Document */
+body *{
+    font-family: '翩翩體-繁';
+    color: #a7a5a7;
+}
+body{
+    background-color: #f8f0f8;
+    
+}
+
+@font-face {
+    font-family: '翩翩體-繁';
+    src: url("fonts/华康翩翩体繁-标准体.otf");
+}
+@font-face {
+    font-family: '翩翩體-繁';
+    src: url("fonts/HuaKangTiFan-CuTi-1.otf");
+    font-weight: bold;
+
+}
+
+
+.A {
+    width: 100%;
+    padding: 10px 1%;
+    background-color: #f8f0f8;
+    margin: 0px;
+}
+
+.B {
+    width: 100%;
+    padding: 10px 0px;
+    margin: 0px;
+    background-color: #fff;
+}
+h1 {
+    text-align: center;
+    font-size: 20px;
+    margin: 20px 0px;
+}
+
+
+/*選單列*/
+#right-menu {
+    background-color: #f8f0f8;
+    z-index: 3;
+}
+
+#right-menu ul li {
+    margin: 0 5%;
+    padding: 5% 0;
+    width: 90%;
+    border-bottom: #fff 1px solid;
+    background-color: #f8f0f8;
+}
+
+#right-menu ul li a {
+    display: block;
+    color: #a5a7a5;
+    font-size: 18px;
+    text-align: center;
+    text-decoration:none;
+}
+
+#right-menu a:focus {
+    background-color: #edc8ed;
+    color: #e08fe0;
+    font-size: 18px;
+}
+/*計數*/
+.countc {
+    width: 20px;
+    height: 16px;
+    padding:0 5px;
+    background-color: #edc8ed;
+    color: #FFF;
+    font-size: 16px;
+    text-align: center;
+    border-radius: 10px;
+    z-index: 2;
+    box-shadow: 2px 2px #efefef;
+    display:inline;
+}
+.countst {
+    width: 20px;
+    height: 16px;
+    padding:0 5px;
+    background-color: #edc8ed;
+    color: #FFF;
+    font-size: 16px;
+    text-align: center;
+    border-radius: 10px;
+    z-index: 2;
+    box-shadow: 2px 2px #efefef;
+    display:inline;
+}
+.heading {
+    text-align: center;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.context {
+    font-size: 16px;
+}
+
+
+.smalltext {
+
+    font-size: 14px;
+}
+

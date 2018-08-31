@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="style.css">
+        <title>Hand's Story</title>
+        <script src='https://ajax.googleapis.com/ajax/libs/jquery/2.0.0/jquery.min.js'></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.0.0-beta.2.4/owl.carousel.min.js"></script>
+        <style>
+
+            .search{
+                width:1000px;
+                margin: auto;
+                font-size: 20px;
+            }
+            .search input{
+                border: 1px #dcd8dc solid;
+                border-radius: 10px;
+                height: 30px;
+                line-height: 30px;
+                font-size: 20px;
+                display: inline-block;
+            }
+            .product{
+                width: 1100px;
+                margin:50px auto;
+                display: flex;
+                justify-content: left;
+                flex-wrap: wrap;
+            }
+            .buy{
+                width: 300px;
+                padding: 25px 100px;
+                border-radius: 5px;
+                border: 2px #dcd8dc solid;
+                margin: 10px;
+                background: #FFF;
+            }
+            .buy img{
+                width: 250px;
+                border-radius: 5px;
+            }
+            .buy h3,.buy .price{
+                width: 100%;
+                text-align: center;
+                margin: 10px 0;
+            }
+            .buy .ps{
+                width: 100%;
+                text-align: left;
+                margin: 10px 0;
+            }
+            .num{
+                width: 30px;
+                margin: 10px 20px;
+                margin-left: 2px;
+                text-align: center;
+            }
+
+            .btn1{
+                display: inline-block;
+                margin: 20px;
+            }
+
+        </style>
+        <script>
+
+            $(document).ready(function(){
+                $('.delete').click(function(){
+                    confirm("確定要刪除此活動?")
+                })
+                
+            })
+
+        </script>
+
+    </head>
+    <body>
+        <header>
+            <a href="index.html" target="_blank"><img src="image/LOGO.jpg">
+                <img src="image/Title.jpg"></a>
+            <div class="stcenter">
+                <ul>
+                    <li><a href="store.html">我的頁面</a></li>
+                    <li><a href="#">店家管理+</a>
+                        <ul>
+                            <li><a href="supdate.html">修改資料</a></li>
+                            <li><a href="workmanage.html">作品集管理</a></li>
+                            <li><a class="active" href="marketing.html">活動管理</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="scomment.html">我的評論</a></li>
+                    <li><a>登出</a></li>
+                </ul>
+            </div>
+        </header>
+        <!--menu-->
+        <div>
+            <ul id="menu">
+                <li><a href="sreserve.html" target="_parent">預約</a></li>
+                <li><a id="st">美甲店</a></li>
+                <li><a href="smap.html" target="_parent">美甲地圖</a></li>
+                <li><a href="sgroup.html" target="_parent">論壇</a></li>
+                <li><a href="#" target="_parent">我的賣場</a>
+                    <ul>
+                        <li><a href="product.html" target="_parent">上傳/下架商品</a></li>
+                        <li><a href="srecord.html" target="_parent">訂單管理</a></li>
+                    </ul>
+
+                </li>
+            </ul>
+        </div>
+        <div class="mall backview">
+            <div class="search">
+                <h1>行銷活動管理</h1>
+                <p align="right" class="num1"><a class="btn btn1" href="marketingadd.html">新增</a>活動總數:3</p>
+            </div>
+            <div class="product">
+                <div class="buy">
+                    <h3>活動名稱:母親節優惠1</h3>
+
+                    <p>建立時間:2018-05-26 16:57:32</p>
+                    <p>活動開始時間：2018-05-26 00:00:00</p>
+                    <p>活動結束時間：2018-05-26 00:00:00</p>
+                    <p>活動DM:<br>
+                        <img src="image/test1.jpg">
+                    </p>
+                    <p align="center"><a href="marketingupdate.html" class="btn">修改</a><br><input type="button" class="btn delete" value="刪除"></p>
+
+                </div>
+                <div class="buy">
+                    <h3>活動名稱:母親節優惠2</h3>
+
+                    <p>建立時間:2018-05-26 16:57:32</p>
+                    <p>活動開始時間：2018-05-26 00:00:00</p>
+                    <p>活動結束時間：2018-05-26 00:00:00</p>
+                    <p>活動DM:<br>
+                        <img src="image/test1.jpg">
+                    </p>
+                    <p align="center"><a href="marketingupdate.html" class="btn">修改</a><br><input type="button" class="btn delete" value="刪除"></p>
+
+                </div>
+                <div class="buy">
+                    <h3>活動名稱:母親節優惠3</h3>
+
+                    <p>建立時間:2018-05-26 16:57:32</p>
+                    <p>活動開始時間：2018-05-26 00:00:00</p>
+                    <p>活動結束時間：2018-05-26 00:00:00</p>
+                    <p>活動DM:<br>
+                        <img src="image/test1.jpg">
+                    </p>
+                    <p align="center"><a href="marketingupdate.html" class="btn">修改</a><br><input type="button" class="btn delete" value="刪除"></p>
+
+                </div>
+            </div>
+        </div>
+
+        <div id="stores" class="jump">
+            <h1>美甲店一覽</h1>
+            <table>
+                <tr>
+                    <td><a href="store.html">QQ美甲</a></td>
+                    <td><a href="store.html">QQ美甲</a></td>
+                    <td><a href="store.html">QQ美甲</a></td>
+                    <td><a href="store.html">QQ美甲</a></td>
+                </tr>
+                <tr>
+                    <td><a href="store.html">QQ美甲</a></td>
+                    <td><a href="store.html">QQ美甲</a></td>
+                    <td><a href="store.html">QQ美甲</a></td>
+                    <td><a href="store.html">QQ美甲</a></td>
+                </tr>
+                <tr>
+                    <td><a href="store.html">QQ美甲</a></td>
+                    <td><a href="store.html">QQ美甲</a></td>
+                    <td><a href="store.html">QQ美甲</a></td>
+                    <td><a href="store.html">QQ美甲</a></td>
+                </tr>
+                <tr>
+                    <td><a href="store.html">QQ美甲</a></td>
+                    <td><a href="store.html">QQ美甲</a></td>
+                    <td><a href="store.html">QQ美甲</a></td>
+                    <td><a href="store.html">QQ美甲</a></td>
+                </tr>
+                <tr>
+                    <td><a href="store.html">QQ美甲</a></td>
+                    <td><a href="store.html">QQ美甲</a></td>
+                    <td><a href="store.html">QQ美甲</a></td>
+                    <td><a href="store.html">QQ美甲</a></td>
+                </tr>
+                <tr>
+                    <td><a href="store.html">QQ美甲</a></td>
+                    <td><a href="store.html">QQ美甲</a></td>
+                    <td><a href="store.html">QQ美甲</a></td>
+                    <td><a href="store.html">QQ美甲</a></td>
+                </tr>
+            </table>
+        </div>
+
+        <script>
+            $('.owl-carousel').owlCarousel({
+                loop:false,
+                margin:15,
+                nav:false,	
+                items:4,
+            })
+
+
+            $('#st,#stores').hover(function(){
+                $('#stores').show();
+            },
+                                   function(){
+                $('#stores').hide();
+            })
+
+
+
+        </script>
+    </body>
+</html>

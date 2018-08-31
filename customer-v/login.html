@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="style.css">
+        <!--彈出框-->
+        <link rel="stylesheet" href="remodal.css">
+        <link rel="stylesheet" href="remodal-default-theme.css">
+        <title>Hand's Story--會員登入</title>
+        <link
+              href="http://ajax.googleapis.com/ajax/libs/jqueryui/1.10.2/themes/hot-sneaks/jquery-ui.css"
+              rel="stylesheet">
+        <script type="text/javascript"
+                src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+        <script type="text/javascript"
+                src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.10.2/jquery-ui.min.js"></script>
+        <script type="text/javascript">
+            $(document).ready(function() {
+                $("#m").click(function(){
+
+                    $("#m").addClass("active");
+                    $("#s").removeClass("active");
+                    $("#store").hide();
+                    $("#mem").show();
+                    console.log($("#m").attr('class'));
+                });
+                $("#s").click(function(){
+                    $("#m").removeClass("active");
+                    $("#s").addClass("active");
+                    $("#mem").hide();
+                    $("#store").show();
+                });
+
+            });
+        </script>
+        <script type="text/javascript">
+            function checkForm() {
+                if(document.form1.account.value==""){		
+                    alert("請填寫帳號!");
+                    document.form1.account.focus();
+                    return false;}
+                if(document.form1.email.value==""){
+                    alert("請填寫電子郵件!");
+                    document.form1.email.focus();
+                    return false;}
+                if(!checkmail(document.form1.email)){
+                    document.form1.email.focus();
+                    return false;}
+            }
+            function checkmail(myEmail) {
+                var filter  = /^([a-zA-Z0-9_\.\-])+\@(([a-zA-Z0-9\-])+\.)+([a-zA-Z0-9]{2,4})+$/;
+                if(filter.test(myEmail.value)){
+                    return true;}
+                alert("電子郵件格式不正確");
+                return false;
+            }
+        </script>
+    </head>
+
+    <body>
+
+        <!--登入框-->
+        <div id="login">
+            <div id="lmenu">
+                <ul class="lbutton">
+                    <li id="m" class="active"><a href="#mem">一般會員</a></li>
+                    <li id="s"><a href="#store">店家</a></li>
+                </ul>
+            </div>
+            <div>
+                <div id="mem" class="lo">
+                    <h1>一般會員登入</h1>
+
+                    <form name="form1" method="post" action="">
+                        <p>
+                            帳號： <input name="cusername" type="text" id="cusername">
+                        </p><br> 
+                        <p>
+                            密碼： <input name="cpasswd" type="password" class="logintextbox" id="cpasswd">
+                        </p><br> 
+                        <p>
+                            <input name="rememberme" type="checkbox" id="rememberme" value="true"> 記住我的帳號密碼
+                        </p><br><br>
+                        <p align="center">
+                            <input type="submit" name="button" class="btn" value="登入會員">
+                        </p>
+                    </form>
+                    <br><br>
+                    <hr size="1" />
+                    <h1>還不是會員？</h1>
+                    <p align="center">
+                        <a class="con" href="#modal">忘記密碼</a> |
+                        <a class="con" href="cjoin.html">加入會員</a>
+                    </p>
+
+
+                </div>
+                <div id="store" class="lo">
+                    <h1>店家登入</h1>
+
+
+                    <form name="form1" method="POST" action="">
+                        <p>
+                            帳號： <input name="susername" type="text" id="susername">
+                        </p><br> 
+                        <p>
+                            密碼： <input name="spasswd" type="password" id="spasswd">
+                        </p><br> 
+                        <p>
+                            <input name="rememberme" type="checkbox" id="rememberme" value="true"> 記住我的帳號密碼
+                        </p><br><br>
+                        <p align="center">
+                            <input type="submit" name="button" class="btn" value="登入店家">
+                        </p>
+                    </form>
+                    <br><br>
+                    <hr size="1" />
+                    <h1>還不是店家會員？</h1>
+                    <p align="center">
+                        <a class="con" href="#modal1">忘記密碼</a> |
+                        <a class="con" href="sjoin.html">加入店家會員</a>
+                    </p>
+
+
+                </div>
+            </div>
+        </div>
+        <!--頁首-->
+        <header>
+            <a href="index.html" target="_blank"><img src="image/LOGO.jpg">
+                <img src="image/Title.jpg"></a>
+        </header>
+        <!--登入畫面背景-->
+        <div class="login">
+            <img src="image/登入背景.jpg" width="100%" style="opacity: 0.9" />
+        </div>
+        <!--彈出框-->
+        <div class="remodal" data-remodal-id="modal">
+            <button data-remodal-action="close" class="remodal-close"></button>
+
+            <table width="600" border="0" align="center" cellpadding="4" cellspacing="0">
+
+                <tr><td><h1>忘記密碼？</h1></td></tr>
+                <form name="form1" method="post" action="customer_passmail.php">
+                    <tr><td>請輸入您申請的帳號，系統將自動產生一個十位數的密碼寄到您註冊的信箱。</td></tr>
+                    <tr><td><strong>帳號</strong>：
+                        <input name="account" type="text" class="logintextbox" id="mail"></td></tr>
+                    <tr align="center"><td><br><br>
+                        <input type="submit" name="button" class="btn" value="寄密碼信">
+                        </td></tr>
+
+                </form>
+
+            </table>
+
+        </div>
+        <!--彈出框-->
+        <div class="remodal" data-remodal-id="modal1">
+            <button data-remodal-action="close" class="remodal-close"></button>
+            <table width="600" border="0" align="center" cellpadding="4" cellspacing="0">
+                <tr><td><h1>忘記密碼？</h1></td></tr>
+                <form name="form1" method="POST" action="store_passmail.php" id="form1" onSubmit="return checkForm();">
+                    <tr><td>請輸入您的帳號及信箱，系統將自動產生一個十位數的密碼寄到您輸入的信箱。</td></tr>
+                    <tr><td><strong>帳號</strong>：
+                        <input name="account" type="text" class="logintextbox" id="account"/></td></tr>
+                    <tr><td>
+                        <strong>信箱</strong>：
+                        <input name="email" type="text" class="logintextbox" id="email"></td></tr>
+                    <tr><td align='center'><br><br>
+                        <input type="submit" name="button" class="btn" value="寄密碼信">
+
+                        </td></tr>
+                </form>
+
+            </table>
+
+        </div>
+
+        <!--彈出框-->
+        <script src="remodal.js"></script>
+    </body>
+</html>

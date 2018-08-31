@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="style.css">
+        <title>Hand's Story</title>
+        <!--jcarousel-->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.0.0-beta.2.4/assets/owl.carousel.min.css">
+        <link rel="stylesheet" href="jcarouselstyle.css">
+        <script src='https://ajax.googleapis.com/ajax/libs/jquery/2.0.0/jquery.min.js'></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.0.0-beta.2.4/owl.carousel.min.js"></script>
+
+        <style>
+            .intro{
+                width:1000px;
+                margin: 10px auto;
+                display: flex;
+                justify-content: space-between;
+            }
+            .intro div{
+                width:300px;
+                font-size: 20px;
+            }
+            .A h1,.B h1{
+                padding-bottom: 20px;
+            }
+            .comment{
+                text-align: center;
+            }
+            .comment table{
+                width:95%;
+                margin: 10px auto;
+                color: #a7a5a7;
+                text-align: center;
+                border-collapse: collapse;
+            }
+            .comment table td{
+                border-radius: 5px;
+                border: 1px #dcd8dc solid;
+                height: 40px;
+                background: #FFF;
+            }
+            .info{
+                height:auto;
+                font-weight: bold;
+            }
+            .info div{
+                width: 600px;
+                margin: auto;
+                display: flex;
+                justify-content: space-between;
+            }
+            .book{
+                text-align: center;
+            }
+            .btn{
+                color: #FFF!important;
+                text-decoration: none;
+                display: inline-block;
+                margin: 20px;
+            }
+            
+
+        </style>
+
+
+    </head>
+    <body>
+        <header>
+            <a href="index.html" target="_blank"><img src="image/LOGO.jpg">
+                <img src="image/Title.jpg"></a>
+            <div class="stcenter">
+                <ul>
+                    <li><a href="store.html">我的頁面</a></li>
+                    <li><a href="#">店家管理+</a>
+                        <ul>
+                            <li><a href="supdate.html">修改資料</a></li>
+                            <li><a href="workmanage.html">作品集管理</a></li>
+                            <li><a href="marketing.html">活動管理</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="scomment.html">我的評論</a></li>
+                    <li><a>登出</a></li>
+                </ul>
+            </div>
+        </header>
+        <!--menu-->
+        <div>
+            <ul id="menu">
+                <li><a href="sreserve.html" target="_parent">預約</a></li>
+                <li><a id="st">美甲店</a></li>
+                <li><a href="smap.html" target="_parent">美甲地圖</a></li>
+                <li><a href="sgroup.html" target="_parent">論壇</a></li>
+                <li><a href="#" target="_parent">我的賣場</a>
+                    <ul>
+                        <li><a href="product.html" target="_parent">上傳/下架商品</a></li>
+                        <li><a href="srecord.html" target="_parent">訂單管理</a></li>
+                    </ul>
+
+                </li>
+            </ul>
+        </div>
+        <div class="store backview">
+
+            <div class="B">
+                <h1>店家介紹</h1>
+                <div class="intro">
+                    <div>
+                        <img src="image/storetestphoto.png" width="250px">
+                    </div>
+                    <div>
+                        <p>店名：QQ美甲<br>
+                            風格：客製、手繪、設計<br>
+                            臉書：QQ<br>
+                            IG：QQ美甲<br>
+                            LineID：@QQ<br>
+                            價格區間：800~1700<br>
+                            RATE：5.0/30</p>
+                    </div>
+                    <div>
+                        <p>關於我們:<br>近捷運站！以白色為主的環境，營造出純靜、閒適的氛圍。在這裡，你能夠放下一切壓力和煩惱，單純享受變美的快樂時光！</p>
+                    </div>
+                </div>
+            </div>
+            <div class="A">
+                <h1>作品集</h1>
+                <div class="photos">
+                    <div class="owl-carousel ">
+                        <a href="swork.html" target="_parent"><img src="image/producttestphoto.jpg" alt=""></a>
+                        <a href="swork.html" target="_parent"><img src="image/producttestphoto.jpg" alt=""></a>
+                        <a href="swork.html" target="_parent"><img src="image/producttestphoto.jpg" alt=""></a>
+                        <a href="swork.html" target="_parent"><img src="image/producttestphoto.jpg" alt=""></a>
+                        <a href="swork.html" target="_parent"><img src="image/producttestphoto.jpg" alt=""></a>
+                        <a href="swork.html" target="_parent"><img src="image/producttestphoto.jpg" alt=""></a>
+                        <a href="swork.html" target="_parent"><img src="image/producttestphoto.jpg" alt=""></a>
+                        <a href="swork.html" target="_parent"><img src="image/producttestphoto.jpg" alt=""></a>
+                        <a href="swork.html" target="_parent"><img src="image/producttestphoto.jpg" alt=""></a>
+                        <a href="swork.html" target="_parent"><img src="image/producttestphoto.jpg" alt=""></a>
+                        <a href="swork.html" target="_parent"><img src="image/producttestphoto.jpg" alt=""></a>
+                        <a href="swork.html" target="_parent"><img src="image/producttestphoto.jpg" alt=""></a>
+                      
+                      
+                    </div>
+                </div>
+            </div>
+            <div class="B comment">
+                <h1>評論</h1>
+                <h3>分數：4.5000顆星</h3>
+                <p>滿分為5顆星</p>
+                <table>
+                    <tr>
+                        <td colspan="3" align="center"><h3>評論紀錄</h3></td>
+                    </tr>
+                    <tr>
+                        <td><strong>評論者</strong></td>
+                        <td><strong>分數</strong></td>
+                        <td><strong>內容</strong></td>
+                    </tr>
+                    <tr>
+                        <td>陳**</td>
+                        <td>4</td>
+                        <td>還不錯，但我覺得膠的處理可以更好。</td>
+                    </tr>
+                    <tr>
+                        <td>謝**</td>
+                        <td>3</td>
+                        <td>時間拿捏的不是很好，我多等了一些時間。</td>
+                    </tr>
+                    <tr>
+                        <td>A**</td>
+                        <td>5</td>
+                        <td>美甲師很親切細心</td>
+                    </tr>
+                </table>
+            </div>
+            <div class="A info">
+                <h1>聯絡資訊</h1>
+                <div>
+                    <p>電話：0999999999	
+                        <br>地址：台北市大安區雲和街
+                    </p>
+                    <p>
+                        營業時間：12:00~21:00
+                        <br>休息日：無
+                    </p>
+                </div>
+            </div>
+        </div>
+
+
+
+
+        <div id="stores" class="jump">
+            <h1>美甲店一覽</h1>
+            <table>
+                <tr>
+                    <td><a href="#">美甲店1</a></td>
+                    <td><a href="#">美甲店2</a></td>
+                    <td><a href="#">美甲店3</a></td>
+                    <td><a href="#">美甲店4</a></td>
+                </tr>
+                <tr>
+                    <td><a href="#">美甲店1</a></td>
+                    <td><a href="#">美甲店2</a></td>
+                    <td><a href="#">美甲店3</a></td>
+                    <td><a href="#">美甲店4</a></td>
+                </tr>
+                <tr>
+                    <td><a href="#">美甲店1</a></td>
+                    <td><a href="#">美甲店2</a></td>
+                    <td><a href="#">美甲店3</a></td>
+                    <td><a href="#">美甲店4</a></td>
+                </tr>
+                <tr>
+                    <td><a href="#">美甲店1</a></td>
+                    <td><a href="#">美甲店2</a></td>
+                    <td><a href="#">美甲店3</a></td>
+                    <td><a href="#">美甲店4</a></td>
+                </tr>
+                <tr>
+                    <td><a href="#">美甲店1</a></td>
+                    <td><a href="#">美甲店2</a></td>
+                    <td><a href="#">美甲店3</a></td>
+                    <td><a href="#">美甲店4</a></td>
+                </tr>
+                <tr>
+                    <td><a href="#">美甲店1</a></td>
+                    <td><a href="#">美甲店2</a></td>
+                    <td><a href="#">美甲店3</a></td>
+                    <td><a href="#">美甲店4</a></td>
+                </tr>
+            </table>
+        </div>
+
+        <script>
+            $('.owl-carousel').owlCarousel({
+                loop:false,
+                margin:15,
+                nav:false,	
+                items:4,
+            })
+
+           
+            $('#st,#stores').hover(function(){
+                $('#stores').show();
+            },
+                                   function(){
+                $('#stores').hide();
+            })
+
+
+
+        </script>
+    </body>
+</html>

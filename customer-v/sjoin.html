@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="style.css">
+        <title>Hand's Story-註冊</title>
+        <link
+              href="http://ajax.googleapis.com/ajax/libs/jqueryui/1.10.2/themes/hot-sneaks/jquery-ui.css"
+              rel="stylesheet">
+        <script type="text/javascript"
+                src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+        <script type="text/javascript"
+                src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.10.2/jquery-ui.min.js"></script>
+
+        <script type="text/javascript">
+            function checkForm(){
+                if(document.formJoin.account.value==""){		
+                    alert("請填寫帳號!");
+                    document.formJoin.account.focus();
+                    return false;
+                }else{
+                    uid=document.formJoin.account.value;
+                    if(uid.length<5 || uid.length>12){
+                        alert( "您的帳號長度只能5至12個字元!" );
+                        document.formJoin.account.focus();
+                        return false;}
+                    if(!(uid.charAt(0)>='a' && uid.charAt(0)<='z')){
+                        alert("您的帳號第一字元只能為小寫字母!" );
+                        document.formJoin.account.focus();
+                        return false;}
+                    for(idx=0;idx<uid.length;idx++){
+                        if(uid.charAt(idx)>='A'&&uid.charAt(idx)<='Z'){
+                            alert("帳號不可以含有大寫字元!" );
+                            document.formJoin.account.focus();
+                            return false;}
+                        if(!(( uid.charAt(idx)>='a'&&uid.charAt(idx)<='z')||(uid.charAt(idx)>='0'&& uid.charAt(idx)<='9')||( uid.charAt(idx)=='_'))){
+                            alert( "您的帳號只能是數字,英文字母及「_」等符號,其他的符號都不能使用!" );
+                            document.formJoin.account.focus();
+                            return false;}
+                        if(uid.charAt(idx)=='_'&&uid.charAt(idx-1)=='_'){
+                            alert( "「_」符號不可相連 !\n" );
+                            document.formJoin.account.focus();
+                            return false;}
+                    }
+                }
+                if(!check_passwd(document.formJoin.passwd.value,document.formJoin.passwdrecheck.value)){
+                    document.formJoin.passwd.focus();
+                    return false;}	
+                if(document.formJoin.name.value==""){
+                    alert("請填寫店名!");
+                    document.formJoin.name.focus();
+                    return false;}
+                if(document.formJoin.phone.value==""){
+                    alert("請填寫電話!");
+                    document.formJoin.phone.focus();
+                    return false;}
+                if(document.formJoin.city.value==""){
+                    alert("請填寫店家所在城市!");
+                    document.formJoin.city.focus();
+                    return false;}
+                if(document.formJoin.distriction.value==""){
+                    alert("請填寫店家所在鄉鎮市!");
+                    document.formJoin.distriction.focus();
+                    return false;}
+                if(document.formJoin.address.value==""){
+                    alert("請填寫店家地址!");
+                    document.formJoin.address.focus();
+                    return false;}
+                if(document.formJoin.story.value==""){
+                    alert("請填寫店家故事!");
+                    document.formJoin.story.focus();
+                    return false;}
+                if(document.formJoin.photo.value==""){
+                    alert("請務必上傳店家照片!");
+                    document.formJoin.photo.focus();
+                    return false;}
+                else{
+                    confirm('確定送出嗎？');
+                    document.formJoin.submit();
+
+                }
+            }
+            function check_passwd(pw1,pw2){
+                if(pw1==''){
+                    alert("密碼不可以空白!");
+                    return false;}
+                for(var idx=0;idx<pw1.length;idx++){
+                    if(pw1.charAt(idx) == ' ' || pw1.charAt(idx) == '\"'){
+                        alert("密碼不可以含有空白或雙引號 !\n");
+                        return false;}
+                    if(pw1.length<5 || pw1.length>10){
+                        alert( "密碼長度只能5到10個字母 !\n" );
+                        return false;}
+                    if(pw1!= pw2){
+                        alert("密碼二次輸入不一樣,請重新輸入 !\n");
+                        return false;}
+                }
+                return true;
+            }
+        </script>
+        <style>
+            #login{
+                top: 120px;
+                height: 600px;
+            }
+           
+            .lo{
+                padding:0px 20px; 
+                margin: 0;
+            }
+            
+            .btn{
+                display: inline-block;
+            }
+            p{
+                margin: 3px 0;
+            }
+        </style>
+    </head>
+
+    <body>
+
+        <!--頁首-->
+        <header>
+            <a href="index.html" target="_blank"><img src="image/LOGO.jpg">
+                <img src="image/Title.jpg"></a>
+        </header>
+        <!--註冊畫面背景-->
+        <div class="register">
+            <img src="image/註冊背景.jpg" width="1378" height="666"
+                 style="opacity: 0.9" />
+        </div>
+        <!--註冊框-->
+        <div id="login">
+            <h1>店家會員註冊</h1>
+            <div class="lo">
+                <p class="smalltext"><font class="redcolor">*</font>表示為必填欄位</p>
+                <form action="" method="POST" name="formJoin" id="formJoin" enctype="multipart/form-data">
+                    <p align="center"><strong>帳號資料</strong></p>
+                    <p><font class="redcolor">*</font><strong>使用帳號</strong>: 
+                        <input name="account" type="text"id="account"> <br>
+                        <span class="smalltext">請填入小寫英文字母、數字以及＿符號。</span>
+                    </p>
+                    <p>
+                        <font class="redcolor">*</font><strong>使用密碼</strong>:
+                        <input name="passwd" type="password" id="passwd"> <br>
+                        <span class="smalltext">請填入8個字元以上的英文字母、數字以及各種符號組合。</span>
+                    </p>
+                    <p>
+                        <font class="redcolor">*</font><strong>確認密碼</strong>: 
+                        <input name="passwdrecheck" type="password" id="passwdrecheck"> <br>
+                        <span class="smalltext">再次輸入密碼</span>
+                    </p>
+                    <br>
+                    <hr size="1" />
+                    <p align="center"><strong>店家資料</strong></p>
+                    <p>
+                        <font class="redcolor">*</font><strong>店名</strong>: 
+                        <input name="name" type="text" id="name"> 
+                    </p>
+                    <p>
+                        <font class="redcolor">*</font><strong>電話</strong>: 
+                        <input name="phone" type="text" id="phone"> 
+                    </p>
+                    <p>
+                        <font class="redcolor">*</font><strong>地址</strong>:
+                        <input name="city" type="text" id="city" placeholder="縣市" style="width:80px;">
+                        <input name="distriction" type="text" id="distriction" placeholder="鄉鎮區" style="width:80px;"> 
+                        <input name="address" type="text" id="address" placeholder="街道">
+                    </p>
+                    <p>
+                        <font class="redcolor">*</font><strong>關於</strong>:
+                        <textarea name="story" id="story"style="width: 300px; height: 60px;"></textarea>
+
+                    </p>
+                    <p class="context">
+                        <font color="#FF0000">*</font><strong>店家照片</strong>: 
+                        <input type="file" name="photo" id="photo" />
+                    </p>
+
+
+                    <p align="center">
+                        <input class="btn" type="button" name="Submit2" onClick="checkForm()" value="送出申請"> 
+                        <input class="btn" type="button" name="Submit" value="回上一頁"
+                               onClick="window.history.back();">
+                    </p>
+                </form>
+            </div>
+        </div>
+
+    </body>
+</html>

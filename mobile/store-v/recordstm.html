@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="css/themes/my-custom-theme.css" />
+        <link rel="stylesheet" href="css/themes/jquery.mobile.icons.min.css" />
+        <link rel="stylesheet"
+              href="http://code.jquery.com/mobile/1.4.5/jquery.mobile.structure-1.4.5.min.css" />
+        <script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
+        <script
+                src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+        <link rel="stylesheet" href="stylemob.css" type="text/css">
+        <meta name="format-detection" content="telephone=no">
+        <title>Hand's Story</title>
+        <style>
+            table {
+                width: 98%;
+                margin: 20px auto;
+                border-collapse: collapse;
+                background-color: #FFF;
+                opacity: 0.9;
+            }
+
+            table tr {
+                height: 50px;
+            }
+
+            table td {
+                text-align: center;
+                border: 1px #dcd8dc solid;
+                border-radius: 5px;
+            }
+            a{
+                text-decoration: none;
+            }
+
+        </style>
+    </head>
+    <body>
+        <div data-role="page">
+             <!--LOGO-->
+            <div data-role="header" style="background-color: #FFF;">
+                <img src="image/Logomob.jpg" width='90%'
+                     style="padding-right: '10%';" border="none" />
+                <!--menu icon-->
+                <a class="ui-btn ui-btn-right  ui-btn-icon-left"
+                   style="margin: 1%; padding: 5%; background-image: url(image/menuiconmob.jpg); background-size: contain; border: solid; border-width: 1px; border-radius: 10px; border-color: rgb(231, 204, 220);"
+                   href="#right-menu"></a>
+            </div>
+            <!--側邊MENU-->
+            <div id="right-menu" data-role="panel" data-position="right"
+                 data-position-fixed="true">
+                <ul data-role='listview'>
+                    <p style="font-size: 20px; text-align: center; color: #a5a7a5; font-weight: bold;">主選單</p>
+                    <li data-role='list-divider'><a href='reservestm.html' rel="external">我的預約</a></li>
+                    <li data-role='list-divider'><a href="storeliststm.html" rel="external">美甲店</a></li>
+                    <li data-role='list-divider'><a href="mapstm.html" rel="external">美甲地圖</a></li>
+                    <li data-role='list-divider'><a href="groupstm.html" rel="external"> 論壇</a></li>
+                    <li data-role='list-divider'><a href="#mallstm">我的賣場</a></li>
+                    <li data-role='list-divider'><a href="#storecm"> 店家管理</a></li>
+                    <li data-role='list-divider'><a href="index.html" rel="external">回首頁</a></li>
+                    <li data-role='list-divider'><a href="https://hsinshan.github.io/Handstory/store-v/" rel="external"> 電腦版</a></li>
+                    <li data-role='list-divider'><a href="?logout=true"  rel="external">登出</a></li>
+
+                </ul>
+            </div>
+            <div data-role="content">
+                <h1>處理中訂單</h1>
+            <table>
+                <tr>
+                    <td>訂單編號</td>
+                    <td>顧客姓名</td>
+                    <td>下單日期</td>
+                    <td>訂單明細</td>
+                    <td>出貨</td>
+                </tr>
+                <tr>
+                    <td>111</td>
+                    <td>李曉恩</td>
+                    <td>2018-05-06 15:00</td>
+                    <td><a class="btn" href="recorddetailstm.html" target="_parent">明細</a></td>
+                    <td><input type="checkbox"></td>
+                </tr>
+                <tr>
+                    <td>122</td>
+                    <td>小小</td>
+                    <td>2018-05-09 12:00</td>
+                    <td><a class="btn" href="recorddetailstm.html" target="_parent">明細</a></td>
+                    <td><input type="checkbox"></td>
+                </tr>
+            </table>
+            <h1>已出貨訂單(只保留90天內的訂單)</h1>
+            <table>
+                <tr>
+                    <td>訂單編號</td>
+                    <td>顧客姓名</td>
+                    <td>下單日期</td>
+                    <td>訂單明細</td>
+                </tr>
+                <tr>
+                    <td>001</td>
+                    <td>Alice</td>
+                    <td>2017-05-07 12:00</td>
+                    <td><a class="btn" href="recorddetailstm.html" target="_parent">明細</a></td>
+                </tr>
+                <tr>
+                    <td>002</td>
+                    <td>Bob</td>
+                    <td>2017-05-07 12:00</td>
+                    <td><a class="btn" href="recorddetailstm.html" target="_parent">明細</a></td>
+                </tr>
+                <tr>
+                    <td>003</td>
+                    <td>QQ</td>
+                    <td>2017-05-07 12:00</td>
+                    <td><a class="btn" href="recorddetailstm.html" target="_parent">明細</a></td>
+                </tr>
+                <tr>
+                    <td>004</td>
+                    <td>YYY</td>
+                    <td>2017-05-07 12:00</td>
+                    <td><a class="btn" href="recorddetailstm.html" target="_parent">明細</a></td>
+                </tr>
+            </table>
+
+            </div>
+        </div>
+           <div data-role='page' id="storecm">
+             <!--LOGO-->
+            <div data-role="header" style="background-color: #FFF;">
+                <img src="image/Logomob.jpg" width='90%'
+                     style="padding-right: '10%';" border="none" />
+                <!--menu icon-->
+                <a class="ui-btn ui-btn-right  ui-btn-icon-left"
+                   style="margin: 1%; padding: 5%; background-image: url(image/menuiconmob.jpg); background-size: contain; border: solid; border-width: 1px; border-radius: 10px; border-color: rgb(231, 204, 220);"
+                   href="#right-menu"></a>
+            </div>
+            <!--側邊MENU-->
+            <div id="right-menu" data-role="panel" data-position="right"
+                 data-position-fixed="true">
+                <ul data-role='listview'>
+                    <p style="font-size: 20px; text-align: center; color: #a5a7a5; font-weight: bold;">主選單</p>
+                    <li data-role='list-divider'><a href='reservestm.html' rel="external">我的預約</a></li>
+                    <li data-role='list-divider'><a href="storeliststm.html" rel="external">美甲店</a></li>
+                    <li data-role='list-divider'><a href="mapstm.html" rel="external">美甲地圖</a></li>
+                    <li data-role='list-divider'><a href="groupstm.html" rel="external"> 論壇</a></li>
+                    <li data-role='list-divider'><a href="#mallstm">我的賣場</a></li>
+                    <li data-role='list-divider'><a href="#storecm"> 店家管理</a></li>
+                    <li data-role='list-divider'><a href="index.html" rel="external">回首頁</a></li>
+                    <li data-role='list-divider'><a href="https://hsinshan.github.io/Handstory/store-v/" rel="external"> 電腦版</a></li>
+                    <li data-role='list-divider'><a href="?logout=true"  rel="external">登出</a></li>
+
+                </ul>
+            </div>
+            <div data-role='content'>
+
+                <p
+                   style="font-size: 20px; text-align: center; color: #a5a7a5; font-weight: bold;">店家管理</p>
+                <div data-role='controlgroup'>
+                    <a data-role='button' href='storestm.html' rel="external">我的頁面</a>
+                    <a data-role='button' href='supdatem.html' rel="external">修改資料</a>
+                    <a data-role='button' href="work_managem.html" rel="external">作品集管理</a>
+                    <a data-role='button' href="marketingm.html" rel="external">行銷活動管理</a>
+                    <a data-role='button' href="scommentm.html" rel="external">我的評論</a>
+                </div>
+            </div>
+        </div>
+        <div data-role='page' id="mallstm">
+             <!--LOGO-->
+            <div data-role="header" style="background-color: #FFF;">
+                <img src="image/Logomob.jpg" width='90%'
+                     style="padding-right: '10%';" border="none" />
+                <!--menu icon-->
+                <a class="ui-btn ui-btn-right  ui-btn-icon-left"
+                   style="margin: 1%; padding: 5%; background-image: url(image/menuiconmob.jpg); background-size: contain; border: solid; border-width: 1px; border-radius: 10px; border-color: rgb(231, 204, 220);"
+                   href="#right-menu"></a>
+            </div>
+            <!--側邊MENU-->
+            <div id="right-menu" data-role="panel" data-position="right"
+                 data-position-fixed="true">
+                <ul data-role='listview'>
+                    <p style="font-size: 20px; text-align: center; color: #a5a7a5; font-weight: bold;">主選單</p>
+                    <li data-role='list-divider'><a href='reservestm.html' rel="external">我的預約</a></li>
+                    <li data-role='list-divider'><a href="storeliststm.html" rel="external">美甲店</a></li>
+                    <li data-role='list-divider'><a href="mapstm.html" rel="external">美甲地圖</a></li>
+                    <li data-role='list-divider'><a href="groupstm.html" rel="external"> 論壇</a></li>
+                    <li data-role='list-divider'><a href="#mallstm">我的賣場</a></li>
+                    <li data-role='list-divider'><a href="#storecm"> 店家管理</a></li>
+                    <li data-role='list-divider'><a href="index.html" rel="external">回首頁</a></li>
+                    <li data-role='list-divider'><a href="https://hsinshan.github.io/Handstory/store-v/" rel="external"> 電腦版</a></li>
+                    <li data-role='list-divider'><a href="?logout=true"  rel="external">登出</a></li>
+
+                </ul>
+            </div>
+            <div data-role='content'>
+
+                <p
+                   style="font-size: 20px; text-align: center; color: #a5a7a5; font-weight: bold;">店家管理</p>
+                <div data-role='controlgroup'>
+                    <a data-role='button' href='productm.html' rel="external">上傳/下架商品</a>
+                    <a data-role='button' href="recordstm.html"
+                       rel="external">訂單管理</a>
+                </div>
+            </div>
+        </div>
+
+    </body>
+</html>
+
+
+

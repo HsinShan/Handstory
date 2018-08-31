@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="css/themes/my-custom-theme.css" />
+        <link rel="stylesheet" href="css/themes/jquery.mobile.icons.min.css" />
+        <link rel="stylesheet"
+              href="http://code.jquery.com/mobile/1.4.5/jquery.mobile.structure-1.4.5.min.css" />
+        <script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
+        <script
+                src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+        <link rel="stylesheet" href="stylemob.css" type="text/css">
+        <meta name="format-detection" content="telephone=no">
+        <title>Hand's Story</title>
+        <!--jcarousel-->
+        <link rel="stylesheet"
+              href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.0.0-beta.2.4/assets/owl.carousel.min.css">
+        <link rel="stylesheet" href="jcarouselstyle.css">
+
+
+        <style>
+            .A {
+                width: 100%;
+                padding: 1%;
+                background-color: #f8f0f8;
+                margin: 0px;
+            }
+
+            .B {
+                width: 100%;
+                padding: 0px;
+                margin: 0px;
+                background-color: #fff;
+            }
+
+            .intro{
+                width:98%;
+                margin: auto;
+
+            }
+            .intro img{
+                width: 98%;
+                margin: auto;
+            }
+            .A h1,.B h1{
+                padding-bottom: 20px;
+            }
+            .comment{
+                text-align: center;
+            }
+            .comment table{
+                width:95%;
+                margin: 10px auto;
+                color: #a7a5a7;
+                text-align: center;
+                border-collapse: collapse;
+            }
+            .comment table td{
+                border-radius: 5px;
+                border: 1px #dcd8dc solid;
+                height: 40px;
+                background: #FFF;
+            }
+            .info{
+                height:auto;
+                font-weight: bold;
+            }
+            .info div{
+                width: 98%;
+                margin: auto;
+                text-align: center;
+            }
+            
+        </style>
+
+        <script type="text/javascript"
+                src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.10.2/jquery-ui.min.js"></script>
+        <script type="text/javascript"
+                src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+        <script
+                src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.0.0-beta.2.4/owl.carousel.min.js"></script>
+
+    </head>
+
+    <body>
+        <div data-role="page">
+            <!--LOGO-->
+            <div data-role="header" style="background-color: #FFF;">
+                <img src="image/Logomob.jpg" width='90%'
+                     style="padding-right: '10%';" border="none" />
+                <!--menu icon-->
+                <a class="ui-btn ui-btn-right  ui-btn-icon-left"
+                   style="margin: 1%; padding: 5%; background-image: url(image/menuiconmob.jpg); background-size: contain; border: solid; border-width: 1px; border-radius: 10px; border-color: rgb(231, 204, 220);"
+                   href="#right-menu"></a>
+            </div>
+            <!--側邊MENU-->
+            <div id="right-menu" data-role="panel" data-position="right"
+                 data-position-fixed="true">
+                <ul data-role='listview'>
+                    <p style="font-size: 20px; text-align: center; color: #a5a7a5; font-weight: bold;">主選單</p>
+                    <li data-role='list-divider'><a href='reservem.html' rel="external">我的預約</a></li>
+                    <li data-role='list-divider'><a href="storelistm.html" rel="external">美甲店</a></li>
+                    <li data-role='list-divider'><a href="mapm.html" rel="external">美甲地圖</a></li>
+                    <li data-role='list-divider'><a href="favm.html" rel="external">收藏店家</a></li>
+                    <li data-role='list-divider'><a href="groupm.html" rel="external"> 論壇</a></li>
+                    <li data-role='list-divider'><a href="mallm.html" rel="external"> 銷售平台</a></li>
+                    <li data-role='list-divider'><a href="#customercm"> 會員管理</a></li>
+                    <li data-role='list-divider'><a href="index.html" rel="external">回首頁</a></li>
+                    <li data-role='list-divider'><a href="https://hsinshan.github.io/Handstory/customer-v/" rel="external"> 電腦版</a></li>
+                    <li data-role='list-divider'><a href="?logout=true"  rel="external">登出</a></li>
+
+                </ul>
+            </div>
+            <!--美甲店區塊-->
+            <div data-role="content" class="A">
+
+                <h1>店家介紹</h1>
+                <div class="intro">
+                    <div>
+                        <img src="image/storetestphoto.png" width="250px">
+                    </div>
+                    <div>
+                        <p>店名：QQ美甲<br>
+                            風格：客製、手繪、設計<br>
+                            臉書：QQ<br>
+                            IG：QQ美甲<br>
+                            LineID：@QQ<br>
+                            價格區間：800~1700<br>
+                            RATE：5.0/30</p>
+                    </div>
+                    <div>
+                        <p>關於我們:<br>近捷運站！以白色為主的環境，營造出純靜、閒適的氛圍。在這裡，你能夠放下一切壓力和煩惱，單純享受變美的快樂時光！</p>
+                    </div>
+                </div>
+                <p align="center">
+                    
+                    <a href="reservestorem.html" rel="external" data-inline="true" data-role="button">我要預約</a>
+                    
+                </p>
+            </div>
+            <div data-role="content" class="B">
+                <h1>作品集</h1>
+                <div class="photos">
+                    <div class="owl-carousel ">
+                        <a href="work_showm.html" target="_parent"><img src="image/producttestphoto.jpg" alt=""></a>
+                        <a href="work_showm.html" target="_parent"><img src="image/producttestphoto.jpg" alt=""></a>
+                        <a href="work_showm.html" target="_parent"><img src="image/producttestphoto.jpg" alt=""></a>
+                        <a href="work_showm.html" target="_parent"><img src="image/producttestphoto.jpg" alt=""></a>
+                        <a href="work_showm.html" target="_parent"><img src="image/producttestphoto.jpg" alt=""></a>
+                        <a href="work_showm.html" target="_parent"><img src="image/producttestphoto.jpg" alt=""></a>
+                        <a href="work_showm.html" target="_parent"><img src="image/producttestphoto.jpg" alt=""></a>
+                        <a href="work_showm.html" target="_parent"><img src="image/producttestphoto.jpg" alt=""></a>
+                        <a href="work_showm.html" target="_parent"><img src="image/producttestphoto.jpg" alt=""></a>
+                        <a href="work_showm.html" target="_parent"><img src="image/producttestphoto.jpg" alt=""></a>
+                        <a href="work_showm.html" target="_parent"><img src="image/producttestphoto.jpg" alt=""></a>
+                        <a href="work_showm.html" target="_parent"><img src="image/producttestphoto.jpg" alt=""></a>
+                        <a href="work_showm.html" target="_parent"><img src="image/producttestphoto.jpg" alt=""></a>
+                        
+                    </div>
+                </div>
+            </div>
+            <div data-role="content" class="A comment">
+                <h1>評論</h1>
+                <h3>分數：4.5000顆星</h3>
+                <p>滿分為5顆星</p>
+                <table>
+                    <tr>
+                        <td colspan="3" align="center"><h3>評論紀錄</h3></td>
+                    </tr>
+                    <tr>
+                        <td><strong>評論者</strong></td>
+                        <td><strong>分數</strong></td>
+                        <td><strong>內容</strong></td>
+                    </tr>
+                    <tr>
+                        <td>陳**</td>
+                        <td>4</td>
+                        <td>還不錯，但我覺得膠的處理可以更好。</td>
+                    </tr>
+                    <tr>
+                        <td>謝**</td>
+                        <td>3</td>
+                        <td>時間拿捏的不是很好，我多等了一些時間。</td>
+                    </tr>
+                    <tr>
+                        <td>A**</td>
+                        <td>5</td>
+                        <td>美甲師很親切細心</td>
+                    </tr>
+                </table>
+            </div>
+            <div data-role="content" class="B info">
+                <h1>聯絡資訊</h1>
+                <div>
+                    <p>電話：0999999999	
+                        <br>地址：台北市大安區雲和街
+                        <br>
+                        營業時間：12:00~21:00
+                        <br>休息日：無
+                    </p>
+                </div>
+            </div>
+        </div>
+
+      <div data-role='page' id="customercm">
+            <!--LOGO-->
+            <div data-role="header" style="background-color: #FFF;">
+                <img src="image/Logomob.jpg" width='90%'
+                     style="padding-right: '10%';" />
+                <!--menu icon-->
+                <a class="ui-btn ui-btn-right  ui-btn-icon-left"
+                   style="margin: 1%; padding: 5%; background-image: url(image/menuiconmob.jpg); background-size: contain; border: solid; border-width: 1px; border-radius: 10px; border-color: rgb(231, 204, 220);"
+                   href="#right-menu"></a>
+            </div>
+            <!--側邊MENU-->
+            <div id="right-menu" data-role="panel" data-position="right"
+                 data-position-fixed="true">
+                <ul data-role='listview'>
+                    <p style="font-size: 20px; text-align: center; color: #a5a7a5; font-weight: bold;">主選單</p>
+                    <li data-role='list-divider'><a href='reservem.html' rel="external">我的預約</a></li>
+                    <li data-role='list-divider'><a href="storelistm.html" rel="external">美甲店</a></li>
+                    <li data-role='list-divider'><a href="mapm.html" rel="external">美甲地圖</a></li>
+                    <li data-role='list-divider'><a href="favm.html" rel="external">收藏店家</a></li>
+                    <li data-role='list-divider'><a href="groupm.html" rel="external"> 論壇</a></li>
+                    <li data-role='list-divider'><a href="mallm.html" rel="external"> 銷售平台</a></li>
+                    <li data-role='list-divider'><a href="#customercm"> 會員管理</a></li>
+                    <li data-role='list-divider'><a href="index.html" rel="external">回首頁</a></li>
+                    <li data-role='list-divider'><a href="https://hsinshan.github.io/Handstory/customer-v/" rel="external"> 電腦版</a></li>
+                    <li data-role='list-divider'><a href="?logout=true"  rel="external">登出</a></li>
+
+                </ul>
+            </div>
+            <div data-role='content'>
+
+                <p style="font-size: 20px; text-align: center; color: #a5a7a5; font-weight: bold;">會員管理</p>
+                <div data-role='controlgroup'>
+                    <a data-role='button' href='cupdatem.html' rel="external">修改資料</a>
+                    <a data-role='button' href="recordm.html" rel="external">我的訂單</a>
+                    <a data-role='button' href="commentm.html" rel="external">我的評價
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <script>
+            $('.owl-carousel').owlCarousel({
+                loop:false,
+                margin:15,
+                nav:false,	
+                items:1,
+            })
+        </script>
+    </body>
+</html>

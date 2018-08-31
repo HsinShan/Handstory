@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="style.css">
+        <title>Hand's Story</title>
+        <script src='https://ajax.googleapis.com/ajax/libs/jquery/2.0.0/jquery.min.js'></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.0.0-beta.2.4/owl.carousel.min.js"></script>
+        <style>
+            .reserve{
+                background: url(image/%E5%BA%97%E5%AE%B6%E9%A0%90%E7%B4%84%E8%83%8C%E6%99%AF.jpg);
+            }
+            .reserve table{
+                width:1000px;
+                margin: auto;
+                color: #a7a5a7;
+                text-align: center;
+                border-collapse: collapse;
+            }
+            .reserve table td{
+                border-radius: 5px;
+                border: 1px #dcd8dc solid;
+                height: 40px;
+                background: #FFF;
+            }
+            .btn{
+                width:60px;
+                margin: auto;
+            }
+
+
+        </style>
+        <script>
+            $(document).ready(function(){
+                $('.cancel').click(function(){
+
+                    alert("確定要取消此訂單嗎");
+                })
+
+            });
+        </script>
+
+    </head>
+    <body>
+        <header>
+            <a href="index.html" target="_blank"><img src="image/LOGO.jpg">
+                <img src="image/Title.jpg"></a>
+            <div class="stcenter">
+                <ul>
+                    <li><a href="store.html">我的頁面</a></li>
+                    <li><a href="#">店家管理+</a>
+                        <ul>
+                            <li><a href="supdate.html">修改資料</a></li>
+                            <li><a href="workmanage.html">作品集管理</a></li>
+                            <li><a href="marketing.html">活動管理</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="scomment.html">我的評論</a></li>
+                    <li><a>登出</a></li>
+                </ul>
+            </div>
+        </header>
+        <!--menu-->
+        <div>
+            <ul id="menu">
+                <li><a href="sreserve.html" target="_parent">預約</a></li>
+                <li><a id="st">美甲店</a></li>
+                <li><a href="smap.html" target="_parent">美甲地圖</a></li>
+                <li><a href="sgroup.html" target="_parent">論壇</a></li>
+                <li class="active"><a href="#" target="_parent">我的賣場</a>
+                    <ul>
+                        <li><a href="product.html" target="_parent">上傳/下架商品</a></li>
+                        <li class="active"><a href="srecord.html" target="_parent">訂單管理</a></li>
+                    </ul>
+
+                </li>
+            </ul>
+        </div>
+        <div class="reserve backview">
+            <h1>處理中訂單</h1>
+            <table>
+                <tr>
+                    <td>訂單編號</td>
+                    <td>顧客姓名</td>
+                    <td>下單日期</td>
+                    <td>訂單明細</td>
+                    <td>出貨</td>
+                </tr>
+                <tr>
+                    <td>111</td>
+                    <td>李曉恩</td>
+                    <td>2018-05-06 15:00</td>
+                    <td><a class="btn" href="srecorddetail.html" target="_parent">明細</a></td>
+                    <td><input type="checkbox"></td>
+                </tr>
+                <tr>
+                    <td>122</td>
+                    <td>小小</td>
+                    <td>2018-05-09 12:00</td>
+                    <td><a class="btn" href="srecorddetail.html" target="_parent">明細</a></td>
+                    <td><input type="checkbox"></td>
+                </tr>
+            </table>
+            <h1>已出貨訂單(只保留90天內的訂單)</h1>
+            <table>
+                <tr>
+                    <td>訂單編號</td>
+                    <td>顧客姓名</td>
+                    <td>下單日期</td>
+                    <td>訂單明細</td>
+                </tr>
+                <tr>
+                    <td>001</td>
+                    <td>Alice</td>
+                    <td>2017-05-07 12:00</td>
+                    <td><a class="btn" href="srecorddetail.html" target="_parent">明細</a></td>
+                </tr>
+                <tr>
+                    <td>002</td>
+                    <td>Bob</td>
+                    <td>2017-05-07 12:00</td>
+                    <td><a class="btn" href="srecorddetail.html" target="_parent">明細</a></td>
+                </tr>
+                <tr>
+                    <td>003</td>
+                    <td>QQ</td>
+                    <td>2017-05-07 12:00</td>
+                    <td><a class="btn" href="srecorddetail.html" target="_parent">明細</a></td>
+                </tr>
+                <tr>
+                    <td>004</td>
+                    <td>YYY</td>
+                    <td>2017-05-07 12:00</td>
+                    <td><a class="btn" href="srecorddetail.html" target="_parent">明細</a></td>
+                </tr>
+            </table>
+
+        </div>
+
+        <div id="stores" class="jump">
+            <h1>美甲店一覽</h1>
+            <table>
+                <tr>
+                    <td><a href="store.html">QQ美甲</a></td>
+                    <td><a href="store.html">QQ美甲</a></td>
+                    <td><a href="store.html">QQ美甲</a></td>
+                    <td><a href="store.html">QQ美甲</a></td>
+                </tr>
+                <tr>
+                    <td><a href="store.html">QQ美甲</a></td>
+                    <td><a href="store.html">QQ美甲</a></td>
+                    <td><a href="store.html">QQ美甲</a></td>
+                    <td><a href="store.html">QQ美甲</a></td>
+                </tr>
+                <tr>
+                    <td><a href="store.html">QQ美甲</a></td>
+                    <td><a href="store.html">QQ美甲</a></td>
+                    <td><a href="store.html">QQ美甲</a></td>
+                    <td><a href="store.html">QQ美甲</a></td>
+                </tr>
+                <tr>
+                    <td><a href="store.html">QQ美甲</a></td>
+                    <td><a href="store.html">QQ美甲</a></td>
+                    <td><a href="store.html">QQ美甲</a></td>
+                    <td><a href="store.html">QQ美甲</a></td>
+                </tr>
+                <tr>
+                    <td><a href="store.html">QQ美甲</a></td>
+                    <td><a href="store.html">QQ美甲</a></td>
+                    <td><a href="store.html">QQ美甲</a></td>
+                    <td><a href="store.html">QQ美甲</a></td>
+                </tr>
+                <tr>
+                    <td><a href="store.html">QQ美甲</a></td>
+                    <td><a href="store.html">QQ美甲</a></td>
+                    <td><a href="store.html">QQ美甲</a></td>
+                    <td><a href="store.html">QQ美甲</a></td>
+                </tr>
+            </table>
+        </div>
+ 
+        <script>
+            $('.owl-carousel').owlCarousel({
+                loop:false,
+                margin:15,
+                nav:false,	
+                items:4,
+            })
+
+           
+            $('#st,#stores').hover(function(){
+                $('#stores').show();
+            },
+                                   function(){
+                $('#stores').hide();
+            })
+
+
+
+        </script>
+    </body>
+</html>

@@ -1,0 +1,248 @@
+﻿*{
+    padding: 0;
+    margin: 0;
+    font-family: '翩翩體-繁';
+    color: #a7a5a7;
+}
+
+@font-face {
+    font-family: '翩翩體-繁';
+    src: url("fonts/华康翩翩体繁-标准体.otf");
+}
+@font-face {
+    font-family: '翩翩體-繁';
+    src: url("fonts/HuaKangTiFan-CuTi-1.otf");
+    font-weight: bold;
+
+}
+header{
+    width: 100%;
+    height: 100px;
+    position: relative;
+}
+header a:nth-child(1){
+    text-decoration: none;
+}
+header #login{
+    width: 100px;
+    border: 5px #e8aaf4 solid;
+    text-decoration: none;
+    display: inline-block;
+    text-align: center;
+    height: 35px;
+    line-height: 40px;
+    font-size: 20px;
+    border-radius: 10px;
+    transition: all 50ms;
+    position: absolute;
+    right: 50px;
+    top:30px;
+}
+header #login:hover{
+    background-color: #e8aaf4;
+    color: #FFF;
+}
+#menu{
+    display: flex;
+    list-style: none;
+    justify-content: space-between;
+    height:35px;
+    line-height: 30px;
+    background-color: #e08fe0;
+
+}
+#menu li{
+    padding-top: 2px;
+    width: 20%;
+    text-align: center;
+    background-color: #edc8ed;
+    transition: all 50ms;
+    font-size: 20px;
+}
+#menu li:hover{
+    background-color: #e08fe0;
+}
+#menu li a{
+    text-decoration: none;
+    color: #fff;
+    display: block;
+}
+#menu .active{
+    background-color: #e08fe0;
+}
+#menu li ul{
+    height: 70px;
+    display: none;
+    list-style: none;
+}
+#menu li ul li{
+    width: 100%;
+}
+
+#menu>li:hover>ul{
+    display: block;
+    z-index: 1;
+}
+
+.A{
+    width:100%;
+    height:500px;
+    background-color:rgb(243,243,243);
+    padding:0px;
+    margin:0px;
+}
+.B{
+    width:100%;
+    height:500px;
+}
+.A h1,.B h1,.jump h1{
+    padding-top:50px;
+    text-align:center;
+    font-size:26px;
+    margin:0px;
+}
+.photos{
+    padding: 0 10px;
+    margin-top: 50px;
+}
+.B a{
+    color: #d93cd9;
+    text-decoration: none;
+    transition: all 0.5s;
+}
+.B a:hover{
+    color: #e6394d;
+    font-size: 20px;
+}
+
+/*美甲店*/
+#stores{
+    position: absolute;
+    top: 131px;
+    width: 100%;
+    height: 500px;
+    z-index: 3;
+    background-color:rgb(243,243,243);
+    border-radius:2px;
+    border: solid;
+    border-color: #edc8ed;
+    display:none;
+}
+.jump table{
+    width: 96%;
+    margin: 20px 50px;
+    font-size: 20px;
+}
+.jump td{
+    text-align: center;
+    height: 40px;
+    line-height: 40px;
+}
+.jump a{
+    color: #a7a5a7;
+    text-decoration: none;
+    transition: all 0.5s;
+}
+.jump a:hover{
+    color: #d93cd9;
+}
+
+
+/*按鈕*/
+.btn{
+    width:100px;
+    border: none;
+    background: #e8aaf4;
+    height:30px;
+    line-height: 35px;
+    color: #FFF;
+    border-radius: 15px;
+    transition: all 0.5s;
+    cursor: pointer;
+    text-decoration: none;
+    display: block;
+    text-align: center;
+}
+.btn:hover{
+    transform: scale(1.2);
+
+}
+/*各葉面*/
+.backview{
+    background-color: #f8f0f8;
+    width:100%;
+    padding-bottom: 100px;
+}
+.backview h1{
+    padding:50px 0;
+    text-align:center;
+    font-size:26px;
+    margin:0px;
+}
+
+
+.redcolor{
+    color: red;
+}
+.smalltext{
+    font-size: 10px;
+}
+
+.remodal {
+    background-color: #f8f0f8;
+    font-size: 16px;
+}
+
+/*會員中心*/
+.stcenter{
+    display: inline-block;
+    position: absolute;
+    right:0px;
+
+}
+.stcenter ul{
+    display: flex;
+    list-style: none;
+    width:320px;
+    height: 30px;
+    cursor: pointer;
+    margin: 0;
+    padding: 0;
+
+}
+.stcenter ul li{
+    width: 80px;
+    height: 30px;
+    line-height: 30px;
+    text-align: center;
+    
+}
+
+.stcenter ul li a{
+    display: block;
+    text-decoration: none;
+    transition: all 50ms;
+}
+.stcenter ul li a:hover{
+    color: #e08fe0;
+}
+.stcenter .active{
+    color: #e08fe0;
+}
+.stcenter ul li ul{
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 90px;
+    background: #fff;
+    border: 1px  #e08fe0 solid;
+    display: none;
+}
+.stcenter ul li ul li{
+    width: 100%;
+}
+
+.stcenter ul li:hover ul{
+    display: block;
+    z-index: 1;
+}

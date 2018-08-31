@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="css/themes/my-custom-theme.css" />
+        <link rel="stylesheet" href="css/themes/jquery.mobile.icons.min.css" />
+        <link rel="stylesheet"
+              href="http://code.jquery.com/mobile/1.4.5/jquery.mobile.structure-1.4.5.min.css" />
+        <script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
+        <script
+                src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+        <link rel="stylesheet" href="stylemob.css" type="text/css">
+        <meta name="format-detection" content="telephone=no">
+
+        <title>Hand's Story</title>
+
+
+
+        <script>
+
+            $(document).ready(function(){
+                $('#submit').click(function(){
+                    if($('#title').val()==""){
+                        alert("請輸入提問主題")
+                    }else if($('#question').val()==""){
+                        alert("請輸入提問內容")
+                    }
+                })
+
+            })
+
+        </script>
+
+
+
+    </head>
+    <body>
+        <div data-role="page">
+            <!--LOGO-->
+            <div data-role="header" style="background-color: #FFF;">
+                <img src="image/Logomob.jpg" width='90%'
+                     style="padding-right: '10%';" border="none" />
+                <!--menu icon-->
+                <a class="ui-btn ui-btn-right  ui-btn-icon-left"
+                   style="margin: 1%; padding: 5%; background-image: url(image/menuiconmob.jpg); background-size: contain; border: solid; border-width: 1px; border-radius: 10px; border-color: rgb(231, 204, 220);"
+                   href="#right-menu"></a>
+            </div>
+            <!--側邊MENU-->
+            <div id="right-menu" data-role="panel" data-position="right"
+                 data-position-fixed="true">
+                <ul data-role='listview'>
+                    <p style="font-size: 20px; text-align: center; color: #a5a7a5; font-weight: bold;">主選單</p>
+                    <li data-role='list-divider'><a href='reservem.html' rel="external">我的預約</a></li>
+                    <li data-role='list-divider'><a href="storelistm.html" rel="external">美甲店</a></li>
+                    <li data-role='list-divider'><a href="mapm.html" rel="external">美甲地圖</a></li>
+                    <li data-role='list-divider'><a href="favm.html" rel="external">收藏店家</a></li>
+                    <li data-role='list-divider'><a href="groupm.html" rel="external"> 論壇</a></li>
+                    <li data-role='list-divider'><a href="mallm.html" rel="external"> 銷售平台</a></li>
+                    <li data-role='list-divider'><a href="#customercm"> 會員管理</a></li>
+                    <li data-role='list-divider'><a href="index.html" rel="external">回首頁</a></li>
+                    <li data-role='list-divider'><a href="https://hsinshan.github.io/Handstory/customer-v/" rel="external"> 電腦版</a></li>
+                    <li data-role='list-divider'><a href="?logout=true"  rel="external">登出</a></li>
+
+                </ul>
+            </div>
+            <div data-role="content">
+                <h1>我要提問</h1>
+                <form action="" method="post" name="formPost" id="formPost"
+                      onSubmit="return checkForm();" data-ajax='false'>
+
+                    <p>主題：<br> <input type="text" name="subject" id="title">
+                    </p>
+
+                    <p>內容:<br> <textarea name="content" id="question"
+                                         style="border: 1px #dcd8dc solid; border-radius: 5px;"></textarea>
+                    </p>
+                    <p align="center">
+                        <input type="submit" name="button" id="submit"
+                               data-inline='true' value="確定">
+                        <input type="button" name="button3"
+                               data-inline='true' value="取消" onClick="window.history.back();">
+                    </p>
+                </form>
+            </div>
+
+        </div>
+        <div data-role='page' id="customercm">
+            <!--LOGO-->
+            <div data-role="header" style="background-color: #FFF;">
+                <img src="image/Logomob.jpg" width='90%'
+                     style="padding-right: '10%';" />
+                <!--menu icon-->
+                <a class="ui-btn ui-btn-right  ui-btn-icon-left"
+                   style="margin: 1%; padding: 5%; background-image: url(image/menuiconmob.jpg); background-size: contain; border: solid; border-width: 1px; border-radius: 10px; border-color: rgb(231, 204, 220);"
+                   href="#right-menu"></a>
+            </div>
+            <!--側邊MENU-->
+            <div id="right-menu" data-role="panel" data-position="right"
+                 data-position-fixed="true">
+                <ul data-role='listview'>
+                    <p style="font-size: 20px; text-align: center; color: #a5a7a5; font-weight: bold;">主選單</p>
+                    <li data-role='list-divider'><a href='reservem.html' rel="external">我的預約</a></li>
+                    <li data-role='list-divider'><a href="storelistm.html" rel="external">美甲店</a></li>
+                    <li data-role='list-divider'><a href="mapm.html" rel="external">美甲地圖</a></li>
+                    <li data-role='list-divider'><a href="favm.html" rel="external">收藏店家</a></li>
+                    <li data-role='list-divider'><a href="groupm.html" rel="external"> 論壇</a></li>
+                    <li data-role='list-divider'><a href="mallm.html" rel="external"> 銷售平台</a></li>
+                    <li data-role='list-divider'><a href="#customercm"> 會員管理</a></li>
+                    <li data-role='list-divider'><a href="index.html" rel="external">回首頁</a></li>
+                    <li data-role='list-divider'><a href="https://hsinshan.github.io/Handstory/customer-v/" rel="external"> 電腦版</a></li>
+                    <li data-role='list-divider'><a href="?logout=true"  rel="external">登出</a></li>
+
+                </ul>
+            </div>
+            <div data-role='content'>
+
+                <p style="font-size: 20px; text-align: center; color: #a5a7a5; font-weight: bold;">會員管理</p>
+                <div data-role='controlgroup'>
+                    <a data-role='button' href='cupdatem.html' rel="external">修改資料</a>
+                    <a data-role='button' href="recordm.html" rel="external">我的訂單</a>
+                    <a data-role='button' href="commentm.html" rel="external">我的評價
+                    </a>
+                </div>
+            </div>
+        </div>
+
+
+    </body>
+</html>
