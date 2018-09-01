@@ -20,9 +20,9 @@
 
 ### 原始碼
 ### (僅含前端原始碼，不包含PHP)
-##### 電腦版的一般消費者頁面 → 請進入/customer-v 資料夾
-##### 電腦版的店家頁面 → 請進入/store-v 資料夾
-##### 行動版的一般消費者頁面 → 請進入/mobile/customer-v 資料夾
-##### 行動版版的店家頁面 → 請進入/mobile/store-v 資料夾
+##### 電腦版的一般消費者頁面 → 請進入https://github.com/HsinShan/Handstory/customer-v 資料夾
+##### 電腦版的店家頁面 → 請進入https://github.com/HsinShan/Handstory/store-v 資料夾
+##### 行動版的一般消費者頁面 → 請進入https://github.com/HsinShan/Handstory/mobile/customer-v 資料夾
+##### 行動版版的店家頁面 → 請進入https://github.com/HsinShan/Handstory/mobile/store-v 資料夾
 
 
